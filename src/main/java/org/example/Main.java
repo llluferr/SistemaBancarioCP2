@@ -27,6 +27,10 @@ public class Main {
         var novoBanco = new Bank("JorgeBank");
         novoBanco.setName(null);
         bankRepository.updateBank(novoBanco);
+        bankRepository.deleteBankById(1);
+        bankRepository.findBankById(1);
+        bankRepository.insertBank(novoBanco);
+        
 
 
         entityManager.close();
